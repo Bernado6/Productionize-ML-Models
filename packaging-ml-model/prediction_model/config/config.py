@@ -13,11 +13,11 @@ SAVE_MODEL_PATH = os.path.join(PACKAGE_ROOT, "trained_models")
 #  Target variable
 TARGET = "Loan_Status"
 # Feature Engineering Parameters/Model parameters
-FEATURES = ['Gender', 'Married', 'Dependents', 'Education', 'Self_Employed',
-            'LoanAmount', 'Loan_Amount_Term', 'Credit_History', 'Property_Area',
-            'Applicant-Income']
+FEATURES = ['Gender', 'Married', 'Dependents', 'Education',
+       'Self_Employed', 'ApplicantIncome', 'CoapplicantIncome', 'LoanAmount',
+       'Loan_Amount_Term', 'Credit_History', 'Property_Area']
 
-NUM_FEATURES = ['Applicant-Income', 'LoanAmount', 'Loan_Amount_Term']
+NUM_FEATURES = ['ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term']
 
 CAT_FEATURES = ['Gender', 'Married', 'Dependents', 'Education',
                 'Self_Employed', 'Property_Area','Credit_History']
@@ -25,13 +25,16 @@ CAT_FEATURES = ['Gender', 'Married', 'Dependents', 'Education',
 FEATURES_TO_ENCODE = ['Gender', 'Married', 'Dependents', 'Education',
                       'Self_Employed', 'Property_Area','Credit_History']
 
-NEW_FEATURE_TO_ADD = 'Applicant-Income'
-FEATURE_TO_MODIFY = 'ApplicantIncome'
+
+FEATURE_TO_MODIFY = ['ApplicantIncome']
+
 FEATURE_TO_ADD = 'CoapplicantIncome'
-DROPPED_FEATURE = 'CoapplicantIncome'
+
+DROPPED_FEATURE =['CoapplicantIncome']
+
 MODEL_NAME = "loan_classification_model.pkl"
 
-LOG_TRANSFORM_FEATURES = ['Applicant-Income', 'LoanAmount', 'Loan_Amount_Term']
+LOG_TRANSFORM_FEATURES = ['ApplicantIncome', 'LoanAmount', 'Loan_Amount_Term']
 
 # SUBMISSION_TEMPLATE = "submission_template.csv"
 # MODEL_PIPELINE = "pipeline.pkl"
