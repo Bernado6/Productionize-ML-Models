@@ -47,6 +47,19 @@ class DomainProcessing(BaseEstimator, TransformerMixin):
         X = X[config.NEW_FEATURE_TO_ADD] = X[self.variable_to_modify]  + X[self.variable_to_add]
         return X
     
+class DroColumns(BaseEstimator, TransformerMixin):
+    def __init__(self, variables_to_drop=None):
+        self.variables_to_drop = variables_to_drop
+        
+    def fit(self, X, y=None):
+        return self
+    
+    def transform(self, X):
+        X = X.copy()
+        X = X.drop(columns = self.variables_to_drop)
+        return X
+    
+    
 class CustomLabelEncoder(BaseEstimator, TransformerMixin):
     def __init__(self, variables=None):
         self.variables=variables
