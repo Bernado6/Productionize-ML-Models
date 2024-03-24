@@ -25,7 +25,8 @@ CAT_FEATURES = ['Gender', 'Married', 'Dependents', 'Education',
 FEATURES_TO_ENCODE = ['Gender', 'Married', 'Dependents', 'Education',
                       'Self_Employed', 'Property_Area','Credit_History']
 
-FEATURE_TO_MODIFY = ['Applicant-Income']
+NEW_FEATURE_TO_ADD = 'Applicant-Income'
+FEATURE_TO_MODIFY = 'ApplicantIncome'
 FEATURE_TO_ADD = 'CoapplicantIncome'
 DROPPED_FEATURE = 'CoapplicantIncome'
 MODEL_NAME = "loan_classification_model.pkl"
