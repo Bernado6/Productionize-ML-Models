@@ -28,25 +28,26 @@ FEATURES_TO_ENCODE = ['Gender', 'Married', 'Dependents', 'Education',
 FEATURE_TO_MODIFY = ['Applicant-Income']
 FEATURE_TO_ADD = 'CoapplicantIncome'
 DROPPED_FEATURE = 'CoapplicantIncome'
+MODEL_NAME = "loan_classification_model.pkl"
 
 LOG_TRANSFORM_FEATURES = ['Applicant-Income', 'LoanAmount', 'Loan_Amount_Term']
 
-SUBMISSION_TEMPLATE = "submission_template.csv"
-MODEL_PIPELINE = "pipeline.pkl"
+# SUBMISSION_TEMPLATE = "submission_template.csv"
+# MODEL_PIPELINE = "pipeline.pkl"
 
-# Model Evaluation Metrics
-METRICS = {
-    "accuracy": "Accuracy",
-    "precision": "Precision",
-    "recall": "Recall",
-}
+# # Model Evaluation Metrics
+# METRICS = {
+#     "accuracy": "Accuracy",
+#     "precision": "Precision",
+#     "recall": "Recall",
+# }
 
-# Data Preprocessing Constants
-DEFAULT_ENCODING = "utf-8"
-CSV_DELIMITER = ";"
-HEADERS = False
-HAS_LABEL = True
+# # Data Preprocessing Constants
+# DEFAULT_ENCODING = "utf-8"
+# CSV_DELIMITER = ";"
+# HEADERS = False
+# HAS_LABEL = True
 
-# Model Training Constants      
-N_JOBS = -1       # Use all available cores for parallel processing (-1 means use all)
-CV_SPLITTER = None     # Use the default KFold splitter (random state is set to 42 by   
+# # Model Training Constants      
+# N_JOBS = -1       # Use all available cores for parallel processing (-1 means use all)
+# CV_SPLITTER = None     # Use the default KFold splitter (random state is set to 42 by   
