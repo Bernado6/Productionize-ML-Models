@@ -21,9 +21,9 @@ def save_pipeline_model(pipeline_to_save):
     logger.info(f"Model has been saved as {config.MODEL_NAME} to {config.SAVE_MODEL_PATH}")
 
 # Deserialization    
-def load_pipeline_model():
-    saved_model_path= os.path.join(config.SAVE_MODEL_PATH, config.MODEL_NAME)
+def load_pipeline_model(model_name):
+    saved_model_path= os.path.join(config.SAVE_MODEL_PATH, model_name)
     model = joblib.load(saved_model_path)
-    logger.info(f"Model loaded successfully from {save_pipeline_model}")
+    logger.info(f"Model loaded successfully as {model_name}")
     
     return model
