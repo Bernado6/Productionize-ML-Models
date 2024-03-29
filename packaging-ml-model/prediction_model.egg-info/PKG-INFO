@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: prediction-model
+Version: 1.0.0
+Summary: Loan Prediction Model
+Home-page: https://github.com/Bernado6/Productionize-ML-Models
+Author: Bernard Kipngeno
+Author-email: benardkipngenoyegon@gmail.com
+License: MIT License
+Classifier: License :: OSI Approved :: MIT LicenseProgramming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: Cpython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.13
+Description-Content-Type: text/markdown
+
+
